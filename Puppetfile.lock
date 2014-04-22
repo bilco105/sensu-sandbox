@@ -1,0 +1,35 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    garethr/erlang (0.3.0)
+      puppetlabs/apt (>= 0.0.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      stahnma/epel (>= 0.0.0)
+    maestrodev/wget (1.4.1)
+    puppetlabs/apt (1.4.2)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/gcc (0.1.0)
+    puppetlabs/rabbitmq (3.1.0)
+      garethr/erlang (>= 0.1.0)
+      puppetlabs/apt (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.0.0)
+    puppetlabs/stdlib (4.1.0)
+    stahnma/epel (0.0.6)
+    thomasvandoren/redis (0.0.9)
+      maestrodev/wget (>= 0.0.0)
+      puppetlabs/gcc (>= 0.0.0)
+
+GIT
+  remote: https://github.com/sensu/sensu-puppet.git
+  ref: master
+  sha: c9e0f5c90666fe25a93b228ad04c84600f01e937
+  specs:
+    sensu/sensu (1.0.0)
+      puppetlabs/apt (>= 0.0.1)
+      puppetlabs/stdlib (>= 0.0.1)
+
+DEPENDENCIES
+  puppetlabs/rabbitmq (>= 0)
+  sensu/sensu (>= 0)
+  thomasvandoren/redis (>= 0)
+
